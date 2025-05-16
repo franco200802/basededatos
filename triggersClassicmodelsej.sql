@@ -20,7 +20,7 @@ after insert on customers
 for each row
 begin
     insert into auditoria_clientes (operacion, usuario, fecha_modificacion, numero_cliente, nombre_cliente, apellido_contacto, nombre_contacto, telefono, ciudad, pais, limite_credito)
-    values ('insert', user(), now(), new.customernumber, new.customername, new.contactlastname, new.contactfirstname, new.phone, new.city, new.country, new.creditlimit);
+    values ('insert', 'sistema', now(), new.customernumber, new.customername, new.contactlastname, new.contactfirstname, new.phone, new.city, new.country, new.creditlimit);
 end;
 //
 
@@ -31,7 +31,7 @@ before update on customers
 for each row
 begin
     insert into auditoria_clientes (operacion, usuario, fecha_modificacion, numero_cliente, nombre_cliente, apellido_contacto, nombre_contacto, telefono, ciudad, pais, limite_credito)
-    values ('update', user(), now(), old.customernumber, old.customername, old.contactlastname, old.contactfirstname, old.phone, old.city, old.country, old.creditlimit);
+    values ('update', 'sistema', now(), old.customernumber, old.customername, old.contactlastname, old.contactfirstname, old.phone, old.city, old.country, old.creditlimit);
 end;
 //
 
@@ -42,7 +42,7 @@ before delete on customers
 for each row
 begin
     insert into auditoria_clientes (operacion, usuario, fecha_modificacion, numero_cliente, nombre_cliente, apellido_contacto, nombre_contacto, telefono, ciudad, pais, limite_credito)
-    values ('delete', user(), now(), old.customernumber, old.customername, old.contactlastname, old.contactfirstname, old.phone, old.city, old.country, old.creditlimit);
+    values ('delete', 'sistema', now(), old.customernumber, old.customername, old.contactlastname, old.contactfirstname, old.phone, old.city, old.country, old.creditlimit);
 end;
 //
 
@@ -70,7 +70,7 @@ after insert on employees
 for each row
 begin
     insert into auditoria_empleados (operacion, usuario, fecha_modificacion, numero_empleado, apellido, nombre, interno, correo, codigo_oficina, jefe, puesto)
-    values ('insert', user(), now(), new.employeenumber, new.lastname, new.firstname, new.extension, new.email, new.officecode, new.reportsto, new.jobtitle);
+    values ('insert', 'sistema', now(), new.employeenumber, new.lastname, new.firstname, new.extension, new.email, new.officecode, new.reportsto, new.jobtitle);
 end;
 //
 
@@ -81,7 +81,7 @@ before update on employees
 for each row
 begin
     insert into auditoria_empleados (operacion, usuario, fecha_modificacion, numero_empleado, apellido, nombre, interno, correo, codigo_oficina, jefe, puesto)
-    values ('update', user(), now(), old.employeenumber, old.lastname, old.firstname, old.extension, old.email, old.officecode, old.reportsto, old.jobtitle);
+    values ('update', 'sistema', now(), old.employeenumber, old.lastname, old.firstname, old.extension, old.email, old.officecode, old.reportsto, old.jobtitle);
 end;
 //
 
@@ -92,7 +92,7 @@ before delete on employees
 for each row
 begin
     insert into auditoria_empleados (operacion, usuario, fecha_modificacion, numero_empleado, apellido, nombre, interno, correo, codigo_oficina, jefe, puesto)
-    values ('delete', user(), now(), old.employeenumber, old.lastname, old.firstname, old.extension, old.email, old.officecode, old.reportsto, old.jobtitle);
+    values ('delete', 'sistema', now(), old.employeenumber, old.lastname, old.firstname, old.extension, old.email, old.officecode, old.reportsto, old.jobtitle);
 end;
 //
 
