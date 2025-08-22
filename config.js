@@ -23,8 +23,6 @@ function hexa() {
     else{
         alert("no es un codigo valido");
     }
-
-
 }
 
 
