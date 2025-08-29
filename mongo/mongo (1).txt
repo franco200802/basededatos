@@ -1,0 +1,38 @@
+1)
+db.EJ.insertOne({nombre:"Santi",apellido:"ortiz",edad:22, mail:"franconashe@gmail.com", compras:[]});
+
+2)
+db. EJ.find ({edad:{$gt:25}}, {nombre:1,apellido:1});
+
+3)
+db. EJ.find ({compras:{$size:2}}, {id:1,mail:1});
+
+4)
+db.EJ.find({},{"compras.monto":1});
+
+5)
+db.EJ.find ({"compras.productos.5":{$exists:true}}, {compras:1});
+
+6)
+db.EJ.find({"compras.id_compra":1}, {"compras.$":1})
+
+7)
+db.EJ.updateOne({_id:2},{$push:{compras:{id_compra:83,monto:130,productos:["pc","sanguche"]}}} )
+
+8)
+db.EJ.updateOne({_id:3},{$set:{mail:"lucas.m@gmail.com"}})
+
+9)
+db.EJ.find({}, {"compras.id_compra":1, "compras.monto":1,_id:0}).sort({"compras.monto":-1}).limit(3)
+
+10)//correjir
+db.EJ.find({"compras.productos":{$nin:["Television"]}}, {nombre:1, mail: 1}).sort({edad:1})
+
+11)//correjir
+db.EJ.find({"compras.productos":{$in:["laptop"]}}, {nombre:1})
+
+12)
+db.EJ.find({"compras.productos":{$in:["television"]}, "compras.monto":{$gt:250}}, {nombre:1})
+
+
+
