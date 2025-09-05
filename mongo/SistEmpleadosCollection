@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "68bacf4883b7a46437a87e41"
+  },
+  "dni": 48716136,
+  "nombre": "jose",
+  "apellido": "martinez",
+  "email": "email.com",
+  "fechaN": "2008-04-06",
+  "puesto": "faya",
+  "carnet": [
+    {
+      "numSerie": 10001,
+      "fechaE": "2026-08-09"
+    }
+  ]
+}]

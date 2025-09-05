@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "68bae00c83b7a46437a87e64"
+  },
+  "nombre": "mati",
+  "apellido": "faya",
+  "dni": 48387141,
+  "fechaNacimiento": "2008-01-02",
+  "teléfono": 1161247214,
+  "historiaClinica": {
+    "númeroDeHistoria": 123451,
+    "fechaDeInicio": "2009-01-02",
+    "observaciones": "muy lindo chico",
+    "registrosMedicos": [
+      {
+        "fechaDeConsulta": "2020-01-03",
+        "Diagnostico": "Todo Bien",
+        "Tratamiento": "tafirol al fallo",
+        "Medico": "matutepro"
+      }
+    ]
+  }
+}]

@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "68bae10c83b7a46437a87e6c"
+  },
+  "Profesores": {
+    "nombre": "jose",
+    "apellido": "faya",
+    "email": "hola@.com",
+    "titulo": "secundario",
+    "Materias": [
+      {
+        "nombreMateria": "basededatos",
+        "codigoMateria": 1001,
+        "horasSemanales": 3
+      }
+    ]
+  }
+}]

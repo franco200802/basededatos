@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "68bad7fd83b7a46437a87e5c"
+  },
+  "titulo": "faya",
+  "anio": "2007",
+  "genero": "terror",
+  "duracion": 3,
+  "actor": [
+    {
+      "nombre": "franco",
+      "apellido": "gonza",
+      "fechaN": "2011-09-08",
+      "nacionaidad": "uruguay"
+    }
+  ]
+}]

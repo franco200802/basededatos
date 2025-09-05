@@ -1,0 +1,17 @@
+[{
+  "_id": {
+    "$oid": "68bad26983b7a46437a87e51"
+  },
+  "nombre": "Jose",
+  "apellido": "fernandez",
+  "email": "faya.com",
+  "clave": 1,
+  "direccion": [
+    {
+      "calle": "const",
+      "ciudad": "caba",
+      "codigoPostal": 332,
+      "probincia": "jujuy"
+    }
+  ]
+}]
