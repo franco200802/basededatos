@@ -1,0 +1,112 @@
+[{
+  "_id": {
+    "$oid": "68cd4b507a2056df779c51f7"
+  },
+  "idMenu": 1,
+  "idRestaurante": 1,
+  "Platos": [
+    {
+      "nombre": "chori",
+      "precio": 17000,
+      "descripcion": "carne",
+      "categoria": "Plato Principal",
+      "observacion": "Es vegano"
+    },
+    {
+      "nombre": "ñoqui",
+      "precio": 11000,
+      "descripcion": "pasta",
+      "categoria": "Plato Principal",
+      "observacion": "exquesito"
+    }
+  ],
+  "Postres": [
+    {
+      "nombre": "helado",
+      "precio": 5000,
+      "descripcion": "ta frio",
+      "categoria": "sin tacc",
+      "observacion": "Nada"
+    }
+  ],
+  "Bebida": [
+    {
+      "nombre": "coca-cola",
+      "precio": "1700"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "68cd5f577a2056df779c5217"
+  },
+  "idMenu": 2,
+  "idRestaurante": 2,
+  "Platos": [
+    {
+      "nombre": "asado",
+      "precio": 20000,
+      "descripcion": "carne",
+      "categoria": "Plato Principal",
+      "observacion": "Es vegano"
+    },
+    {
+      "nombre": "ñoqui",
+      "precio": 11000,
+      "descripcion": "pasta",
+      "categoria": "Plato Principal",
+      "observacion": "exquesito"
+    }
+  ],
+  "Postres": [
+    {
+      "nombre": "helado",
+      "precio": 5000,
+      "descripcion": "ta frio",
+      "categoria": "sin tacc",
+      "observacion": "Nada"
+    }
+  ],
+  "Bebida": [
+    {
+      "nombre": "coca-cola",
+      "precio": "1700"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "68cd5fc37a2056df779c5218"
+  },
+  "idMenu": 3,
+  "idRestaurante": 3,
+  "Platos": [
+    {
+      "nombre": "chori",
+      "precio": 17000,
+      "descripcion": "carne",
+      "categoria": "Plato Principal",
+      "observacion": "Es vegano"
+    },
+    {
+      "nombre": "ñoqui",
+      "precio": 11000,
+      "descripcion": "pasta",
+      "categoria": "Plato Principal",
+      "observacion": "exquesito"
+    }
+  ],
+  "Postres": [
+    {
+      "nombre": "helado",
+      "precio": 5000,
+      "descripcion": "ta frio",
+      "categoria": "sin tacc",
+      "observacion": "Nada"
+    }
+  ],
+  "Bebida": [
+    {
+      "nombre": "coca-cola",
+      "precio": "1700"
+    }
+  ]
+}]

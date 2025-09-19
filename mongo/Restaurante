@@ -1,0 +1,177 @@
+[{
+  "_id": {
+    "$oid": "68cd3e007a2056df779c51f4"
+  },
+  "idRestaurante": 1,
+  "nombre": "el tabano",
+  "direccion": "Tamborini 5080",
+  "telefono": 18887878,
+  "horarios": "08:00-17:00",
+  "petFriendly": true,
+  "delivery": true,
+  "TieneOpcionVegana": true,
+  "metodoPago": [
+    "Tarjeta",
+    "MercadoPago",
+    "Efectivo"
+  ],
+  "EventosEspeciales": [
+    {
+      "nombre": "happyHour",
+      "descripcion": "ta bueno",
+      "fecha": "2025-09-08",
+      "horario": "20:00",
+      "tieneReserva": true
+    }
+  ],
+  "Promociones": [
+    {
+      "motivo": "Descuento de verano",
+      "porsentaje": "50%off",
+      "fecha_inicio": "2025-10-11",
+      "fecha_fin": "2025-10-15"
+    },
+    {
+      "motivo": "Descuento de viernes",
+      "porsentaje": "30%off",
+      "fecha_inicio": "2025-8-11",
+      "fecha_fin": "2025-9-15"
+    }
+  ],
+  "servicios": [
+    "show Privado",
+    "catering"
+  ]
+},{
+  "_id": {
+    "$oid": "68cd5bbd7a2056df779c520f"
+  },
+  "idRestaurante": 2,
+  "nombre": "chancha y los veinte",
+  "direccion": "Tamborini 5010",
+  "telefono": 18887998,
+  "horarios": "08:00-17:00",
+  "petFriendly": false,
+  "delivery": false,
+  "TieneOpcionVegana": true,
+  "metodoPago": [
+    "Tarjeta",
+    "MercadoPago",
+    "Efectivo"
+  ],
+  "EventosEspeciales": [
+    {
+      "nombre": "happyHour",
+      "descripcion": "ta bueno",
+      "fecha": "2025-09-08",
+      "horario": "20:00",
+      "tieneReserva": true
+    }
+  ],
+  "Promociones": [
+    {
+      "motivo": "Descuento de verano",
+      "porsentaje": "50%off",
+      "fecha_inicio": "2025-10-11",
+      "fecha_fin": "2025-10-15"
+    },
+    {
+      "motivo": "Descuento de viernes",
+      "porsentaje": "30%off",
+      "fecha_inicio": "2025-8-11",
+      "fecha_fin": "2025-9-15"
+    }
+  ],
+  "servicios": [
+    "show Privado",
+    "catering"
+  ]
+},{
+  "_id": {
+    "$oid": "68cd5c3a7a2056df779c5210"
+  },
+  "idRestaurante": 3,
+  "nombre": "faya",
+  "direccion": "gaga 5010",
+  "telefono": 18884098,
+  "horarios": "08:00-17:00",
+  "petFriendly": true,
+  "delivery": true,
+  "TieneOpcionVegana": false,
+  "metodoPago": [
+    "Tarjeta",
+    "MercadoPago",
+    "Efectivo"
+  ],
+  "EventosEspeciales": [
+    {
+      "nombre": "happyHour",
+      "descripcion": "ta bueno",
+      "fecha": "2025-09-08",
+      "horario": "20:00",
+      "tieneReserva": true
+    }
+  ],
+  "Promociones": [
+    {
+      "motivo": "Descuento de verano",
+      "porsentaje": "70%off",
+      "fecha_inicio": "2025-10-11",
+      "fecha_fin": "2025-10-15"
+    },
+    {
+      "motivo": "Descuento de viernes",
+      "porsentaje": "30%off",
+      "fecha_inicio": "2025-8-11",
+      "fecha_fin": "2025-9-15"
+    }
+  ],
+  "servicios": [
+    "show Privado",
+    "estacionamiento"
+  ]
+},{
+  "_id": {
+    "$oid": "68cd5c567a2056df779c5211"
+  },
+  "idRestaurante": 4,
+  "nombre": "gaga 2",
+  "direccion": "Tamborini 3000",
+  "telefono": 14487878,
+  "horarios": "08:00-17:00",
+  "petFriendly": false,
+  "delivery": false,
+  "TieneOpcionVegana": false,
+  "metodoPago": [
+    "Tarjeta",
+    "MercadoPago",
+    "Efectivo"
+  ],
+  "EventosEspeciales": [
+    {
+      "nombre": "happyHour",
+      "descripcion": "ta bueno",
+      "fecha": "2025-09-08",
+      "horario": "20:00",
+      "tieneReserva": true
+    }
+  ],
+  "Promociones": [
+    {
+      "motivo": "Descuento de verano",
+      "porsentaje": "50%off",
+      "fecha_inicio": "2025-10-11",
+      "fecha_fin": "2025-10-15"
+    },
+    {
+      "motivo": "Descuento de viernes",
+      "porsentaje": "30%off",
+      "fecha_inicio": "2025-8-11",
+      "fecha_fin": "2025-9-15"
+    }
+  ],
+  "servicios": [
+    "show Privado",
+    "catering"
+  ]
+}]

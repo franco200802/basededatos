@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "68cd54ab7a2056df779c5205"
+  },
+  "idRetauranete": 1,
+  "mail": "francofaya@gmail.com",
+  "estrellas": 3
+},{
+  "_id": {
+    "$oid": "68cd5f037a2056df779c5213"
+  },
+  "idRetauranete": 2,
+  "mail": "mati@gmail.com",
+  "estrellas": 1
+},{
+  "_id": {
+    "$oid": "68cd5f0f7a2056df779c5214"
+  },
+  "idRetauranete": 3,
+  "mail": "fran@gmail.com",
+  "estrellas": 1
+},{
+  "_id": {
+    "$oid": "68cd5f237a2056df779c5215"
+  },
+  "idRetauranete": 4,
+  "mail": "santiO@gmail.com",
+  "estrellas": 5
+}]
