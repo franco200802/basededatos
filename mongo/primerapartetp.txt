@@ -1,0 +1,46 @@
+ejercicios tp
+
+2)db.Restaurante.insertOne({
+  idRestaurante: 1,
+  nombre: "el tabano",
+  direccion: "Tamborini 5080",
+  telefono: 18887878,
+  horarios: "08:00-17:00",
+  metodoPago: [
+    "Tarjeta",
+    "MercadoPago",
+    "Efectivo"
+  ],
+  EventosEspeciales: [
+    {
+      nombre: "happyHour",
+      descripcion: "ta bueno",
+      fecha: "2025-09-08",
+      horario: "20:00",
+      tieneReserva: true
+    }
+  ],
+  Promociones: [
+    {
+      motivo: "Descuento de verano",
+      porsentaje: "50%off",
+      fecha_inicio: "2025-10-11",
+      fecha_fin: "2025-10-15"
+    },
+    {
+      motivo: "Descuento de viernes",
+      porsentaje: "30%off",
+      fecha_inicio: "2025-8-11",
+      fecha_fin: "2025-9-15"
+    }
+  ],
+  servicios: [
+    "show Privado",
+    "catering"
+  ]
+});
+
+3)db.Restaurante.count()
+
+4)db.Restaurante.find({$and:[ {petFriendly:true }, {delivery:true}, {TieneOpcionVegana:true}]}, {nombre:1})
+
