@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "68dfe35991e31f4a93b1c565"
+  },
+  "dni": 48716136,
+  "nombre": "jose",
+  "apellido": "faya",
+  "Compra": [
+    {
+      "Fecha": {
+        "$date": "1970-01-01T00:00:02.015Z"
+      },
+      "id": 1,
+      "Productos": [
+        {
+          "id": 1,
+          "Descripcion": "faya lindo",
+          "Precio": 1200,
+          "CantidadComprada": 2
+        }
+      ]
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "68dfe43791e31f4a93b1c566"
+  },
+  "dni": 48716123,
+  "nombre": "mati",
+  "apellido": "faya",
+  "Compra": [
+    {
+      "Fecha": {
+        "$date": "1970-01-01T00:00:02.003Z"
+      },
+      "id": 2,
+      "Productos": [
+        {
+          "id": 2,
+          "Descripcion": "faya lindo",
+          "Precio": 1300,
+          "CantidadComprada": 4
+        }
+      ]
+    }
+  ]
+}]
