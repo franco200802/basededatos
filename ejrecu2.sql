@@ -39,7 +39,7 @@ cambiado.*/
 create trigger before_update_libro before update on libro for each row
   if new.ranking != old.ranking then
  if new.ranking > 8 then
-update libro set new.duracionPrestamo = old.duracionPrestamo * 0.9, new.ranking);
+update libro set duracionPrestamo = duracionPrestamo * 0.9 where id = new.id;
 end if;
 end if;
 end//
