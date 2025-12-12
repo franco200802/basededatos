@@ -12,8 +12,8 @@ BEGIN
 START TRANSACTION;
 select puntos into p from clientes where id = idCliente;
 select precio_base into preciob from tipos_habitacion join habitacion on idTipo=id where idHabitacion = habitaciones.idHabitacion;
-select precio_final into precio_f from reservas join clientes on idcliente = cliente.idcliente where idCliente= clientes.idCliente;
-insert into reservas values (null, idCliente, idHabitacion, null, null, null,precio_f * 0,75 );
+select datediff(fechaFin, fechaInicio) into cant_dias;
+insert into reservas values (null, idCliente, idHabitacion, null, null, null,preciob * cant_dias * 0,75 );
 if p > 1000 and preciob > 50000 then
 commit;
 else
@@ -55,9 +55,9 @@ end//
 esa habitación.
 */
 
-create trigger after_update_habitacion after update on habitacion for each row
+create trigger after_update_habitacion after update on tipos_habitacion for each row
 begin
 if old.precio<new.precio then 
-update reservas set precio_final =precio_final * 1.1 where reservas.idHabitacion = new.idHabitacion and datediff(fecha_inicio,current_date())>=0;
+update reservas join habitaciones on idHabitacion=habitaciones.id set precio_final =precio_final * 1.1 where idTipo=new.id and datediff(fecha_inicio,current_date())>=0;
 end if;
 end//
