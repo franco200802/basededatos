@@ -36,10 +36,10 @@ end//
 préstamo en un 10%, si el nuevo ranking es mayor a 8. Validar que el ranking haya
 cambiado.*/
 
-create trigger before_insert_libro before insert on libro for each row
+create trigger before_update_libro before update on libro for each row
   if new.ranking != old.ranking then
  if new.ranking > 8 then
- insert into libro values (null,null,null,null,new.duracionPrestamo = old.duracionPrestamo * 0.9, new.ranking)
+update libro set new.duracionPrestamo = old.duracionPrestamo * 0.9, new.ranking);
 end if;
 end if;
 end//
